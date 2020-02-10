@@ -179,16 +179,16 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Company\Index.cshtml" />
-    <Content Include="Views\Company\Create.cshtml" />
-    <Content Include="Views\Company\Edit.cshtml" />
     <Content Include="Views\Details.cshtml" />
-    <Content Include="Views\Company\Details.cshtml" />
     <Content Include="Views\Company\AddNewCompany.cshtml" />
     <Content Include="Views\Company\EditCompany.cshtml" />
     <Content Include="Views\Company\CompanyDetails.cshtml" />
     <Content Include="Views\Company\DeleteCompany.cshtml" />
     <Content Include="Views\Invoice\Index.cshtml" />
     <Content Include="Views\Invoice\AddNewInvoice.cshtml" />
+    <Content Include="Views\Invoice\EditInvoice.cshtml" />
+    <Content Include="Views\Invoice\DeleteInvoice.cshtml" />
+    <Content Include="Views\Invoice\InvoiceDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

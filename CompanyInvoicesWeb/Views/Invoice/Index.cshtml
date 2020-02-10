@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "Invoices";
 }
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <h2>Index</h2>
 @using (Html.BeginForm("AddNewInvoice", "Invoice", FormMethod.Get))
 {
@@ -29,11 +29,11 @@
                     <td>@item.StartDate</td>
                     <td>@item.EndDate</td>
                     <td>
-                        <a href="Company/EditCompany/@item.ID"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
+                        <a href="EditInvoice/@item.CompanyInvoiceId/@item.CompanyName"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
                     </td>
-                    <td><a href="Company/CompanyDetails/@item.ID"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></td>
+                    <td><a href="InvoiceDetails/@item.CompanyInvoiceId/@item.CompanyName"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></td>
                     <td>
-                        @using (Html.BeginForm("DeleteInvoice", "Inovoice", new { companyName = item.CompanyName }))
+                        @using (Html.BeginForm("DeleteInvoice", "Invoice", new {id = item.CompanyInvoiceId, companyName = item.CompanyName }))
                         {
                             <input type="submit" />
                         }

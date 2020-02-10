@@ -59,9 +59,9 @@ namespace CompanyInvoicesWeb.Controllers
         }
         public ActionResult InvoiceDetails(int ID, string companyName)
         {
-            var company = invoiceDAL.GetInvoiceById(ID, companyName);
+            var invoice = invoiceDAL.GetInvoiceById(ID, companyName);
 
-            return View(MapperConfig.Mapper.Map<VM.Company>(company));
+            return View(MapperConfig.Mapper.Map<VM.Inovice>(invoice));
         }
 
         [HttpPost]
@@ -71,28 +71,19 @@ namespace CompanyInvoicesWeb.Controllers
 
             return RedirectToAction("Index");
         }
+        public ActionResult EditInvoice(int id, string companyName)
+        {
+            var invoice = invoiceDAL.GetInvoiceById(id, companyName);
 
-        //public ActionResult EditInvoice(int CompanyInvoiceId, string companyName)
-        //{
-        //    var dbInvoice = new VM.Company();
+            return View(MapperConfig.Mapper.Map<VM.Inovice>(invoice));
+        }
 
-        //    var company = companyDAL.GetCompanyByName(id);
+        [HttpPost]
+        public ActionResult EditInvoice(VM.Inovice invoice)
+        {
 
-        //    dbCompany.CompanyName = company.CompanyName;
-        //    dbCompany.Address = company.Address;
-        //    dbCompany.Street = company.Street;
-        //    dbCompany.StreetNumber = company.StreetNumber;
-        //    dbCompany.Zip = company.Zip;
-        //    dbCompany.Email = company.Email;
-        //    dbCompany.ContactPerson = company.ContactPerson;
-        //    dbCompany.Phone = company.Phone;
-        //    dbCompany.City = company.City;
-        //    //dbCompany.Contract = company.Contracts
-        //    dbCompany.ContractStartDate = company.ContractStartDate;
-        //    dbCompany.ContractEndDate = company.ContractEndDate;
-        //    dbCompany.ContractStatus = company.ContractStatus;
-
-        //    return View(dbCompany);
-        //}
+            invoiceDAL.EditInvoice(MapperConfig.Mapper.Map<DB.CompanyInvoice>(invoice));
+            return RedirectToAction("Index");
+        }
     }
 }

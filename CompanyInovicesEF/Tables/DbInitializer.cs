@@ -19,7 +19,7 @@ namespace CompanyInovicesEF.Tables
                 };
             context.Charges.AddRange(charges);
 
-            context.Companies.Add(new Company { CompanyName = "BH Telecom" });
+            context.Companies.Add(new Company { CompanyName = "BH Telecom", City = "Sarajevo", ContactPerson="Hamo Hamic", Email = "info@bih.net.ba", Phone ="062333666", Address = "Malta 5"});
 
             context.Lookups.Add(new Lookup { Name = "Tax amount", Type = "TAX", Value = "17" });
             

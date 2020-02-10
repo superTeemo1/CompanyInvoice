@@ -15,8 +15,8 @@ namespace CompanyInvoicesWeb
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Company", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}/{action}/{id}/{companyName}",
+                defaults: new { controller = "Company", action = "Index", id = UrlParameter.Optional, companyName = UrlParameter.Optional }
             );
         }
     }

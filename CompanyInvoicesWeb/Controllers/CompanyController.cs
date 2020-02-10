@@ -69,7 +69,6 @@ namespace CompanyInvoicesWeb.Controllers
             dbCompany.ContactPerson = company.ContactPerson;
             dbCompany.Phone = company.Phone;
             dbCompany.City = company.City;
-            //dbCompany.Contract = company.Contracts
             dbCompany.ContractStartDate = company.ContractStartDate;
             dbCompany.ContractEndDate = company.ContractEndDate;
             dbCompany.ContractStatus = company.ContractStatus;
@@ -82,7 +81,7 @@ namespace CompanyInvoicesWeb.Controllers
         {
 
             var dbCompany = new Company();
-            dbCompany.CompanyName = !String.IsNullOrEmpty(company.CompanyName) ? company.CompanyName : "s2r93sjs";
+            dbCompany.CompanyName = company.CompanyName;
             dbCompany.City = company.City;
             dbCompany.Address = company.Address;
             dbCompany.Email = company.Email;

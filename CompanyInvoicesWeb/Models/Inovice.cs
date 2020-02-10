@@ -7,7 +7,7 @@ namespace CompanyInvoicesWeb.Models
 {
     public class Inovice
     {
-        public int ID { get; set; }
+        public int CompanyInvoiceId { get; set; }
         public int ChargeID { get; set; }
         public string CompanyName { get; set; }
         public DateTime InvoiceDate { get; set; }
