@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Invoices";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm("AddNewInvoice", "Invoice", FormMethod.Get))
+{
+
+    <button class="btn btn-primary">Add Invoice</button>
+}
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Company Name</th>
+            <th scope="col">Invoice Date</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">End Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td> @item.CompanyName</td>
+                    <td>@item.InvoiceDate</td>
+                    <td>@item.StartDate</td>
+                    <td>@item.EndDate</td>
+                    <td>
+                        <a href="Company/EditCompany/@item.ID"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
+                    </td>
+                    <td><a href="Company/CompanyDetails/@item.ID"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></td>
+                    <td>
+                        @using (Html.BeginForm("DeleteInvoice", "Inovoice", new { companyName = item.CompanyName }))
+                        {
+                            <input type="submit" />
+                        }
+                    </td>
+                </tr>
+            };
+
+        }
+
+    </tbody>
+</table>

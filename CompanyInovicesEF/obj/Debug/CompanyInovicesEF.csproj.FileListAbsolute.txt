@@ -1,0 +1,13 @@
+C:\Users\KORISNIK\source\repos\CompanyInvoicesWeb\CompanyInovicesEF\bin\Debug\CompanyInovicesEF.exe.config
+C:\Users\KORISNIK\source\repos\CompanyInvoicesWeb\CompanyInovicesEF\bin\Debug\CompanyInovicesEF.exe
+C:\Users\KORISNIK\source\repos\CompanyInvoicesWeb\CompanyInovicesEF\bin\Debug\CompanyInovicesEF.pdb
+C:\Users\KORISNIK\source\repos\CompanyInvoicesWeb\CompanyInovicesEF\bin\Debug\AutoMapper.dll
+C:\Users\KORISNIK\source\repos\CompanyInvoicesWeb\CompanyInovicesEF\bin\Debug\EntityFramework.dll
+C:\Users\KORISNIK\source\repos\CompanyInvoicesWeb\CompanyInovicesEF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KORISNIK\source\repos\CompanyInvoicesWeb\CompanyInovicesEF\bin\Debug\AutoMapper.pdb
+C:\Users\KORISNIK\source\repos\CompanyInvoicesWeb\CompanyInovicesEF\bin\Debug\AutoMapper.xml
+C:\Users\KORISNIK\source\repos\CompanyInvoicesWeb\CompanyInovicesEF\bin\Debug\EntityFramework.xml
+C:\Users\KORISNIK\source\repos\CompanyInvoicesWeb\CompanyInovicesEF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KORISNIK\source\repos\CompanyInvoicesWeb\CompanyInovicesEF\obj\Debug\CompanyInovicesEF.csproj.CopyComplete
+C:\Users\KORISNIK\source\repos\CompanyInvoicesWeb\CompanyInovicesEF\obj\Debug\CompanyInovicesEF.exe
+C:\Users\KORISNIK\source\repos\CompanyInvoicesWeb\CompanyInovicesEF\obj\Debug\CompanyInovicesEF.pdb
